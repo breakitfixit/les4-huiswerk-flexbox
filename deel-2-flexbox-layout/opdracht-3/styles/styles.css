@@ -1,1 +1,42 @@
 /*Schrijf hier jouw CSS*/
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col-1 {
+    flex: 1;
+    min-width: 20vw;
+}
+
+.col-2 {
+    flex: 4;
+    min-width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.header, .footer {
+    display: flex;
+    height: 20vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 60vh;
+}
+
+.article {
+    display: flex;
+    min-width: 60vw;
+}
+
+.aside {
+    display: flex;
+    min-width: 20vw;
+}
