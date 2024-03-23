@@ -1,1 +1,56 @@
 /*Schrijf hier jouw CSS*/
+/*****deel 2 - opdracht 1*****/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    border: dashed 2px yellowgreen;
+}
+
+/**********Header**********/
+.header {
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+    border: dashed 2px blueviolet;
+    flex: 0 0 auto; /* flex-grow, flex-shrink, flex-basis */
+}
+
+/********** Content = container voor Article  + Nav + Aside **********/
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 80vh;
+    border: dashed 2px orangered;
+}
+/*********** losse containers per content onderdeel************/
+.article{
+    display: flex;
+    order: 1;
+    flex: 3 1 auto; /* flex-grow: 1, flex-shrink: 1, flex-basis: auto */
+    }
+
+.aside {
+    display: flex;
+    /*min-width: 16vh;*/
+    flex: 1 0 16%; /* flex-grow, flex-shrink, flex-basis */
+    order: 2;
+}
+
+.nav {
+    display: flex;
+    min-width: 16vh;
+    order: 3;
+    flex: 1 0 16%; /* flex-grow, flex-shrink, flex-basis */
+}
+
+/**********Footer**********/
+
+.footer {
+    display: flex;
+    border: 2px dashed wheat;
+    min-height: 10vh;
+    flex: 0 0 auto; /* flex-grow, flex-shrink, flex-basis */
+}
