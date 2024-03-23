@@ -29,7 +29,7 @@ body {
 .article{
     display: flex;
     order: 1;
-    flex: 3 1 auto; /* flex-grow: 1, flex-shrink: 1, flex-basis: auto */
+    flex: 3 1 auto; /* flex-grow: 3, flex-shrink: 1, flex-basis: auto */
     }
 
 .aside {
