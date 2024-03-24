@@ -1,1 +1,46 @@
 /*Schrijf hier jouw css*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: yellowgreen;
+
+
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*align-items: center;*/
+    flex-grow: 1;
+    max-width: 60%;
+    height: 60vh;
+    gap: 20px;
+    /*flex-wrap: wrap;*/
+    border: 2px dashed hotpink;
+}
+
+.section-1 {
+    background-color: darkred;
+    border: dashed 2px white;
+}
+
+.section-2 {
+    background-color: darkred;
+    border: dashed 2px white;
+
+}
+
+.section-3 {
+    background-color: darkred;
+    border: dashed 2px white;
+
+}
