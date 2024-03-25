@@ -1,11 +1,55 @@
 /*Schrijf hier jouw css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75px;
+    background-color: #030027;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 24px;
+    margin-left: 50px;
+
+    align-items: center;
+    color: ghostwhite;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 4;
+}
+
+.header-buttons button {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 150px;
+    border: none;
+}
+
+.header-buttons button:hover {
+    background-color: #151E3F;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: yellowgreen;
-
-
+    background: #F2F3D9;
+    font-family: 'Nunito', sans-serif;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .introduction {
@@ -18,29 +62,29 @@ body {
 .sections {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    /*align-items: center;*/
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
     flex-grow: 1;
-    max-width: 60%;
-    height: 60vh;
-    gap: 20px;
-    /*flex-wrap: wrap;*/
-    border: 2px dashed hotpink;
+    height:  350px;
 }
 
-.section-1 {
-    background-color: darkred;
-    border: dashed 2px white;
+.spacer {
+    flex-grow: 1;
 }
 
-.section-2 {
-    background-color: darkred;
-    border: dashed 2px white;
+.section-1, .section-2, .section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: #c16e70;
+    flex-grow: 0;
+    border-radius: 5px;
+    height: 100%;
+    max-width: 280px;
+
 
 }
 
-.section-3 {
-    background-color: darkred;
-    border: dashed 2px white;
 
-}
